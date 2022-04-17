@@ -112,9 +112,13 @@ body, html {
     margin: 1rem 0 1rem 0.75rem;
     box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
     border-radius: 1.25rem;
-    background-color: #f6f6f6;
+    background-color: #f4f4f5;
     display: flex;
     position: relative;
+    &:hover {
+      transition: background-color .3s ease-in-out;
+      background-color: #ebe2f8; 
+    }
 
     @media (min-width:64rem) {
       flex: 1;
@@ -231,6 +235,6 @@ body, html {
   }
 
   &__like {
-    background-color: white!important;
+    background-color: white;
   }
 }
